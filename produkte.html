@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produkte – TechDeals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">TechDeals</div>
+
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="vergleich.html">Vergleiche</a>
+            <a href="ratgeber.html">Ratgeber</a>
+            <a href="warenkorb.html" id="warenkorbLink">🛒 Warenkorb (0)</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="products-page">
+
+            <h1>Unsere Produkte</h1>
+
+            <p class="products-intro">
+                Entdecke unsere verschiedenen Demo-Produkte
+                aus den Bereichen Technik, Gaming und Zubehör.
+            </p>
+            <div id="favoriteAnzeige" class="favorite-display">
+    ⭐ Du hast noch keine Favoriten ausgewählt.
+</div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-icon">🎧</div>
+
+                    <h3>SoundPro Kopfhörer</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐ <span>4,5/5</span>
+                    </div>
+
+                    <p>
+                        Kabellose Kopfhörer mit guter
+                        Klangqualität und langer Akkulaufzeit.
+                    </p>
+
+                    <div class="price">79,99 €</div>
+
+                 <a href="produkt.html" class="product-button">
+                    Details ansehen
+                </a>
+<button
+    class="cart-button"
+    onclick="inWarenkorb('SoundPro', 79.99)">
+    🛒 Zum Warenkorb
+</button>
+                <button
+    class="favorite-button"
+    onclick="favoritSetzen('SoundPro', this)">
+    ⭐ Favorit
+</button>
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-icon">⌨️</div>
+
+                    <h3>KeyMaster Tastatur</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐ <span>4,7/5</span>
+                    </div>
+
+                    <p>
+                        Mechanische Tastatur für Gaming,
+                        Schule und Alltag.
+                    </p>
+
+                    <div class="price">69,99 €</div>
+
+                    <a href="keymaster.html" class="product-button">
+                        Details ansehen
+                    </a>
+                    <button
+    class="cart-button"
+    onclick="inWarenkorb('KeyMaster', 69.99)">
+    🛒 Zum Warenkorb
+</button>
+<button
+    class="favorite-button"
+    onclick="favoritSetzen('KeyMaster', this)">
+    ⭐ Favorit
+</button>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-icon">🖱️</div>
+
+                    <h3>GameMouse Pro</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐ <span>4,3/5</span>
+                    </div>
+
+                    <p>
+                        Präzise Gaming-Maus mit mehreren
+                        programmierbaren Tasten.
+                    </p>
+
+                    <div class="price">49,99 €</div>
+
+                    <a href="gamemouse.html" class="product-button">
+                        Details ansehen
+                    </a>   
+                    <button
+    class="cart-button"
+    onclick="inWarenkorb('GameMouse', 49.99)">
+    🛒 Zum Warenkorb
+</button>
+ <button
+    class="favorite-button"
+    onclick="favoritSetzen('GameMouse', this)">
+    ⭐ Favorit
+</button>
+                    
+
+                </div>
+
+            </div>
+
+
+            <p class="demo-notice">
+                Hinweis: Alle Produkte, Preise und Bewertungen
+                sind für diese Übungsseite frei erfunden.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

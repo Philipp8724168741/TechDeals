@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechDeals – Technik entdecken</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TechDeals</div>
+
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="vergleich.html">Vergleiche</a>
+            <a href="ratgeber.html">Ratgeber</a>
+            <a href="warenkorb.html" id="warenkorbLink">🛒 Warenkorb (0)</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Deine nächste Technik entdecken.</h1>
+
+            <p>
+                Vergleiche interessante Produkte und
+                entdecke neue Technik.
+            </p>
+
+            <a href="#" class="button">
+                Produkte entdecken
+            </a>
+        </section>
+        <section class="search-section">
+
+    <h2>Produkt suchen</h2>
+
+    <input
+        type="text"
+        id="produktsuche"
+        placeholder="Zum Beispiel: Kopfhörer"
+        oninput="sucheProdukte()"
+    >
+
+    <p id="produktAnzahl">3 Produkte gefunden</p>
+
+</section><section class="products">
+<div class="categories">
+
+    <button onclick="filterProdukte('alle')">Alle</button>
+    <button onclick="filterProdukte('audio')">🎧 Audio</button>
+    <button onclick="filterProdukte('zubehoer')">⌨️ Zubehör</button>
+    <button onclick="filterProdukte('gaming')">🎮 Gaming</button>
+
+</div>
+            <h2>Beliebte Produkte</h2>
+
+
+              <div class="product-card" data-kategorie="audio">
+
+    <div class="product-icon">🎧</div>
+
+    <h3>SoundPro Kopfhörer</h3>
+
+    <div class="rating">⭐⭐⭐⭐⭐ <span>4,5/5</span></div>
+
+    <p>
+        Kabellose Kopfhörer mit guter Klangqualität
+        und langer Akkulaufzeit.
+    </p>
+
+    <div class="price">79,99 €</div>
+
+    <ul class="pros-cons">
+        <li>✓ Gute Klangqualität</li>
+        <li>✓ Lange Akkulaufzeit</li>
+        <li>✓ Kabellos</li>
+        <li class="negative">✕ Keine echte Produktbewertung</li>
+    </ul>
+
+    <a href="produkt.html" class="product-button">
+        Mehr ansehen
+    </a>
+
+</div>  
+
+                <div class="product-card" data-kategorie="zubehoer">
+
+    <div class="product-icon">⌨️</div>
+
+    <h3>KeyMaster Tastatur</h3>
+
+    <div class="rating">⭐⭐⭐⭐⭐ <span>4,7/5</span></div>
+
+    <p>
+        Mechanische Tastatur für Gaming,
+        Schule und Alltag.
+    </p>
+
+    <div class="price">69,99 €</div>
+
+    <ul class="pros-cons">
+        <li>✓ Mechanische Tasten</li>
+        <li>✓ Für Gaming geeignet</li>
+        <li>✓ Robustes Design</li>
+        <li class="negative">✕ Demo-Produkt</li>
+    </ul>
+
+    <a href="#" class="product-button">
+        Mehr ansehen
+    </a>
+
+</div>
+
+                <div class="product-card" data-kategorie="gaming">
+
+    <div class="product-icon">🖱️</div>
+
+    <h3>GameMouse Pro</h3>
+
+    <div class="rating">⭐⭐⭐⭐ <span>4,3/5</span></div>
+
+    <p>
+        Präzise Gaming-Maus mit mehreren
+        programmierbaren Tasten.
+    </p>
+
+    <div class="price">49,99 €</div>
+
+    <ul class="pros-cons">
+        <li>✓ Präziser Sensor</li>
+        <li>✓ Programmierbare Tasten</li>
+        <li>✓ Für Gaming geeignet</li>
+        <li class="negative">✕ Demo-Produkt</li>
+    </ul>
+
+    <a href="#" class="product-button">
+        Mehr ansehen
+    </a>
+
+</div>
+
+            </div>
+
+        </section>
+    </main>
+
+<script src="script.js"></script></body>
+
+</html>

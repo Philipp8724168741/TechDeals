@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kasse – TechDeals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">TechDeals</div>
+
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="produkte.html">Produkte</a>
+            <a href="vergleich.html">Vergleiche</a>
+            <a href="ratgeber.html">Ratgeber</a>
+            <a href="warenkorb.html" id="warenkorbLink">
+                🛒 Warenkorb (0)
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="checkout">
+
+            <h1>💳 Demo-Kasse</h1>
+
+            <p class="checkout-intro">
+                Überprüfe deine Bestellung.
+            </p>
+
+
+            <div id="kassenAnzeige">
+                <!-- Bestellung wird hier angezeigt -->
+            </div>
+<div class="customer-form">
+
+    <h2>📦 Lieferdaten</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Max Mustermann">
+
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" placeholder="max@beispiel.de">
+
+    <label for="adresse">Adresse</label>
+    <input type="text" id="adresse" placeholder="Musterstraße 1">
+
+    <label for="ort">PLZ und Ort</label>
+    <input type="text" id="ort" placeholder="12345 Musterstadt">
+
+</div>
+<div class="payment-form">
+
+    <h2>💳 Zahlungsart</h2>
+
+    <label for="zahlung">Zahlungsart</label>
+
+    <select id="zahlung" onchange="zahlungsartAendern()">
+        <option value="karte">💳 Demo-Kartenzahlung</option>
+        <option value="paypal">🅿️ Demo-PayPal</option>
+        <option value="ueberweisung">🏦 Demo-Überweisung</option>
+    </select>
+
+    <div id="kartenDaten">
+
+        <label for="kartennummer">Kartennummer</label>
+        <input
+            type="text"
+            id="kartennummer"
+            placeholder="1234 5678 9012 3456">
+
+        <div class="card-row">
+
+            <div>
+                <label for="ablaufdatum">Ablaufdatum</label>
+                <input
+                    type="text"
+                    id="ablaufdatum"
+                    placeholder="MM/JJ">
+            </div>
+
+            <div>
+                <label for="cvc">CVC</label>
+                <input
+                    type="text"
+                    id="cvc"
+                    placeholder="123">
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="payment-demo-notice">
+        🔒 Demo-Zahlung – bitte keine echten Zahlungsdaten eingeben.
+    </p>
+
+</div>
+            <div id="kassenSumme"></div>
+
+            <button class="order-button" onclick="bestellungAbschliessen()">
+                ✅ Bestellung abschließen
+            </button>
+
+            <p class="demo-notice">
+                Demo-Funktion – es findet keine echte Bestellung
+                und keine Zahlung statt.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
