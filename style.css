@@ -32,34 +32,44 @@ nav a {
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    background-color: white;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 52px;
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 20px;
-    color: #6b7280;
+    color: #dbeafe;
+    margin-bottom: 30px;
 }
 
 .button {
     display: inline-block;
     margin-top: 30px;
-    padding: 14px 25px;
+    padding: 15px 28px;
     background-color: #2563eb;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.6);
 }
 
 .button:hover {
     background-color: #1d4ed8;
 }.products {
-    padding: 70px 60px;
+    padding: 30px 60px;
     text-align: center;
 }
 
@@ -78,19 +88,26 @@ nav a {
 
 .product-card {
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 16px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s;
+    transition: transform 0.25s, box-shadow 0.25s;
+    border: 1px solid #e5e7eb;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
 }
 
+
 .product-icon {
+    display: inline-block;
     font-size: 55px;
     margin-bottom: 20px;
+    padding: 14px 20px;
+    background-color: #f1f5f9;
+    border-radius: 14px;
 }
 
 .product-card h3 {
@@ -226,10 +243,12 @@ nav a {
     margin-top: 15px;
     color: #6b7280;
     font-size: 14px;
-}.price {
-    font-size: 24px;
+}
+.price {
+    font-size: 26px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 22px 0;
+    color: #2563eb;
 }
 
 .rating {
@@ -244,8 +263,8 @@ nav a {
 .pros-cons {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
-    text-align: left;
+    margin: 8px 0;
+    text-align: center;
 }
 
 .pros-cons li {
